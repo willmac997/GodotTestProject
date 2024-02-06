@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://k2h4jrc3qk4p"]
+
+[ext_resource type="Texture2D" uid="uid://cm0fsp7p162sa" path="res://icon.svg" id="1_euexl"]
+[ext_resource type="Script" path="res://Scripts/Godood.cs" id="1_xggvp"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_eb6s0"]
+blend_mode = 2
+
+[node name="Main" type="Node2D"]
+
+[node name="Blackhole" type="Node2D" parent="."]
+position = Vector2(374, 264)
+
+[node name="BlackholeSprite" type="Sprite2D" parent="Blackhole"]
+material = SubResource("CanvasItemMaterial_eb6s0")
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_euexl")
+
+[node name="Godood" type="Node2D" parent="."]
+position = Vector2(119, 63)
+script = ExtResource("1_xggvp")
+
+[node name="GodoodSprite" type="Sprite2D" parent="Godood"]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_euexl")
