@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://k2h4jrc3qk4p"]
+[gd_scene load_steps=4 format=3 uid="uid://k2h4jrc3qk4p"]
 
 [ext_resource type="PackedScene" uid="uid://clwb35ufco2y8" path="res://Scenes/Paddle.tscn" id="1_7ccj3"]
 [ext_resource type="PackedScene" uid="uid://cnbgqa1yakrxa" path="res://Scenes/Ball.tscn" id="1_e6r32"]
+[ext_resource type="Script" path="res://Scripts/Game.cs" id="1_n3ftj"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_n3ftj")
 
 [node name="Ball" parent="." instance=ExtResource("1_e6r32")]
 position = Vector2(576, 324)
